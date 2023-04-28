@@ -194,9 +194,13 @@
     }
     .encriptado{
         width: 80%;
-        height: 15%;
+        height: 18%;
         left: 10%;
         top: 80%;
+    }
+    .encriptado p{
+        width: 80%;
+        line-height: 120%;
     }
     .mensaje-encriptado{
         width: 100%;
