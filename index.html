@@ -6,39 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador de Texto</title>
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div class="encriptar">
-                <textarea name="texto" 
-                class="texto" 
-                id="texto" 
-                cols="30" 
-                rows="10" 
-                placeholder="Ingresa el texto aqui"></textarea>
-            </div>
-            <div class="terminos">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" type="button" onclick="encriptar()">
-                Encriptar</button>
-                <input type="button" 
-                class="btn-desencriptar" 
-                value="Desencriptar" 
-                onclick="desencriptar()"/>
-            </div>
-        </div>
-        <div class="encriptado">
-            <img src="img/muñeco.png" alt="" id="muñeco">
-            <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
-                <p id="parrafo">Ingrese texto que deseas encriptar o desencriptar</p>
-                <!--<textarea name="mensaje" id="mensajee" cols="30" rows="10" class="mensaje"></textarea>-->
-            </div>
-        </div>
+        <header>
+            <img class="logo" src="img/Logo.svg" alt="Logo">
+        </header>
+
+        <main>
+            <section class="seccion1">
+                <div class="contenedorcajatexto">
+                        <textarea class="cajatexto" placeholder="Ingresa el texto aqui"></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="img/alerta.svg" alt="Alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+            </section>
+            <section class="seccion2">
+                <div class="contenedormunieco">
+                    <img src="img/Muñeco.svg" alt="Muñeco">
+                </div>
+                <div class="contendor-parrafo">
+                    <h3>Ningún mensaje fue <br> encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+            </section>
+        </main>
+        
     </body>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </html>
